@@ -1,4 +1,4 @@
-from google_play_scraper import search, app
+from google_play_scraper import search
 import csv
 import subprocess
 import os
