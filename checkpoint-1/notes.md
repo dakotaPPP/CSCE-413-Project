@@ -9,4 +9,3 @@ Note: Only exploit applications locally
     - Dump files using a debugger
     - Can try MITM or Replay
     - HTTP Downgrade
-    - 
