@@ -1,2 +1,3 @@
-com.pabloleban.IdleSlayer
-com.lavaflame.MMO
+id,isVulnerable
+com.klikapp.freeiqtest,false
+com.iq.test.online.tools.store,false
