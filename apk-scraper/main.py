@@ -16,6 +16,8 @@ args = parser.parse_args()
 SEARCH_TERM_FOR_APP_IDS = args.search
 NUMBER_OF_APKS_TO_DOWNLOAD = args.number_of_apks
 
+if not os.path.exists("apks"):
+    os.makedirs("apks")
 
 def update_checked_list():
     """Move downloaded app IDs from app_id_list.csv to checked_app_id_list.csv."""
