@@ -1,0 +1,4 @@
+*.json
+*.apk
+*.xapk
+.DS_Store
