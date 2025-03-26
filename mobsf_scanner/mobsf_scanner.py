@@ -1,7 +1,6 @@
 import os
 import requests
 import json
-import time
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 
 SERVER_URL = "http://localhost:8000"
@@ -10,11 +9,20 @@ API_KEY = "api key from mobsf docker"
 APKS_FOLDER = "./apks"
 RESULTS = "./results"
 
-# Finish this part of organizing and making a leaderboard
+# make dirs
+os.makedirs(APKS_FOLDER, exist_ok=True)
+os.makedirs(RESULTS, exist_ok=True)
+
 VERY_HIGH_RISK_DIR = os.path.join(RESULTS, "very_high_risk")
 HIGH_RISK_DIR = os.path.join(RESULTS, "high_risk")
 MEDIUM_RISK_DIR = os.path.join(RESULTS, "medium_risk")
 LOW_RISK_DIR = os.path.join(RESULTS, "low_risk")
+
+# make dirs
+os.makedirs(VERY_HIGH_RISK_DIR, exist_ok=True)
+os.makedirs(HIGH_RISK_DIR, exist_ok=True)
+os.makedirs(MEDIUM_RISK_DIR, exist_ok=True)
+os.makedirs(LOW_RISK_DIR, exist_ok=True)
 
 def sort_scorecard(report_json):
     security_score = report_json.get("security_score")
