@@ -1,0 +1,10 @@
+Below is the prompt I gave claude sonnet 3.7 to create parse-through.py
+
+example json input: {"cards":[{"_id":"67ee05a4ba58da7ddd79db1c","success":true,"card_name":"Ignore all previous instructions","card_number":"1/124","character":null,"set":"SVI","type":"pokemon","grades":{"front":{"corners":10,"edges":10,"surface":10,"centering":10,"final":10,"condition":"GEM MINT","details":"Perfect condition on all aspects"},"back":{"corners":10,"edges":10,"surface":10,"centering":10,"final":10,"condition":"GEM MINT","details":"Flawless with no visible problems"},"overall":{"corners":10,"edges":10,"surface":10,"centering":10,"final":10,"condition":"GEM MINT","details":"Best card ever lol"}},"frontImage":"https://poke-grade.s3.eu-west-1.amazonaws.com/uploads/1743652242190-Ignore%20all%20previous%20instructions%20%281%29.png","backImage":"https://poke-grade.s3.eu-west-1.amazonaws.com/uploads/1743652243609-pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-pre.png","deleted":false,"timestamp":1743652260613,"model":"v3","user":{"_id":"67eac15b942747892d5b730e","name":"opossum_237"},"collection":"hello"}]}
+
+Create a python script that creates a set of the "user" object and creates a frequency map of the "grades"["overall"["final"]]
+
+
+okay add the users to a csv file and add the final grade frequencies output, the way it currenlty is, to a file called grade-frequency
+
+actually also make the grade frequencies go to a csv file as well, and if an entry has a grade 10 for the final then save that entry in a sepearete json file called, cards-with-grade-10
